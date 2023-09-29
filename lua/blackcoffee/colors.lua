@@ -8,7 +8,7 @@ M.default = {
 
 	bg_dark = "#333333",
 	bg = "#666666",
-	bg_highlight = "#999999",
+	bg_highlight = "#333333",
 	terminal_black = "#303030",
 
 	fg = "#f7f3e1",
