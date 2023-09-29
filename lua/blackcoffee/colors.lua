@@ -1,40 +1,54 @@
 local util = require("blackcoffee.util")
-
+-- a comment
 local M = {}
 
 ---@class Palette
 M.default = {
 	none = "NONE",
-	bg_dark = "#000000",
-	bg = "#101010",
-	bg_highlight = "#2d2d2d",
+
+	bg_dark = "#333333",
+	bg = "666666",
+	bg_highlight = "#999999",
 	terminal_black = "#303030",
-	fg = "#f6f3e8",
-	fg_dark = "#384048",
-	fg_gutter = "#444444",
-	comment = "#949494",
-	dark3 = "#656565",
-	dark5 = "#857b6f",
-	cyan = "#949494",
-	blue = "#8f8f8f",
-	blue0 = "#8ac6f2",
-	blue1 = "#a0a8b0",
-	blue2 = "#b06e37",
-	blue5 = "#cae682",
-	blue6 = "#e5786d",
-	blue7 = "#e7f6da",
-	magenta = "#f6f3e8",
-	magenta2 = "#ffb47f",
+
+	fg = "#f7f3e1",
+	fg_dark = "#e4a785",
+	fg_gutter = "#b2b2b2",
+	comment = "#d6d6d6",
+
+	dark3 = "#725752",
+	dark5 = "#8a6d3b",
+
+	cyan = "#007acc",
+	blue = "#a1c4f2",
+	blue0 = "#629dea",
+
+	blue1 = "#e08e5e",
+	blue2 = "#ffdcb2",
+	blue5 = "#ffcc99",
+	blue6 = "#bc986a",
+	blue7 = "#8e735b",
+
+	magenta = "#ba55d3",
+	magenta2 = "#b87333",
+
+	red    = "#cc6666",
+	red1   = "#f5978e",
+
+	green  = "#e2f0c2",
+	green1 = "#c2d185",
+	green2 = "#669966",
+
 	purple = "#ffc08c",
 	orange = "#ffb47f",
 	yellow = "#303030",
-	green = "#cae682",
-	green1 = "#656565",
-	green2 = "#6d98e3",
-	teal = "#857b6f",
-	red = "#e5786d",
-	red1 = "#8f8f8f",
-	git = { change = "#ffb47f", add = "#cae682", delete = "#e5786d" },
+	teal   = "#857b6f",
+
+	git = {
+		change = "#ffb47f",
+		add = "#cae682",
+		delete = "#e5786d"
+	},
 	gitSigns = {
 		add = "#cae682",
 		change = "#ffb47f",
