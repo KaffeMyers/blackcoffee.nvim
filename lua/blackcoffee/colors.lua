@@ -44,17 +44,17 @@ M.default = {
 	yellow = "#e6e600",
 	teal   = "#009999",
 
-	git = {
-		add = M.default.green1,
-		change = M.default.yellow,
-		delete = M.default.red1
-	},
-	gitSigns = {
-		add = M.default.green1,
-		change = M.default.yellow,
-		delete = M.default.red1
-	},
+	git = {},
+	gitSigns = {},
 }
+M.default.git.add = M.default.green1
+M.default.git.change = M.default.yellow
+M.default.git.delete = M.default.red1
+M.default.gitSigns.add = M.default.green1
+M.default.gitSigns.change = M.default.yellow
+M.default.gitSigns.delete = M.default.red1
+
+
 ---@return ColorScheme
 function M.setup(opts)
   opts = opts or {}
