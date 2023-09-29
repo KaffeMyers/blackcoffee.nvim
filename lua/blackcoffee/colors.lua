@@ -39,20 +39,20 @@ M.default = {
 	green1 = "#c2d185",
 	green2 = "#669966",
 
-	purple = "#ffc08c",
-	orange = "#ffb47f",
-	yellow = "#303030",
-	teal   = "#857b6f",
+	purple = "#944dff",
+	orange = "#ff9933",
+	yellow = "#e6e600",
+	teal   = "#009999",
 
 	git = {
-		change = "#ffb47f",
-		add = "#cae682",
-		delete = "#e5786d"
+		add = M.default.green1,
+		change = M.default.yellow,
+		delete = M.default.red1
 	},
 	gitSigns = {
-		add = "#cae682",
-		change = "#ffb47f",
-		delete = "#e5786d",
+		add = M.default.green1,
+		change = M.default.yellow,
+		delete = M.default.red1
 	},
 }
 ---@return ColorScheme
