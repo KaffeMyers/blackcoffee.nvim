@@ -6,9 +6,9 @@ local M = {}
 M.default = {
 	none           = "NONE",
 
-	bg_dark        = "#333333",
-	bg             = "#2d2d2d",
-	bg_highlight   = "#999999",
+	bg_dark        = "#000000",
+	bg             = "#010101",
+	bg_highlight   = "#444444",
 	terminal_black = "#303030",
 
 	fg             = "#f7f3e1",
@@ -29,14 +29,14 @@ M.default = {
 	blue6          = "#bc986a",
 	blue7          = "#8e735b",
 
-	magenta        = "#ba55d3",
+	magenta        = "#cae682",
 	magenta2       = "#b87333",
 
 	red            = "#cc6666",
 	red1           = "#f5978e",
 
 	green          = "#ffb47f",
-	green1         = "#c2d185",
+	green1         = "#ba55d3",
 	green2         = "#669966",
 
 	purple         = "#944dff",
