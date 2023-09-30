@@ -6,54 +6,54 @@ local M = {}
 M.default = {
 	none           = "NONE",
 
+	-- Colors for representing original term colors
+	blue           = "#a1c4f2",
+	cyan           = "#22c3c3", --#007acc
+	green          = "#51b62f", --#cae682
+	magenta        = "#b62f95", --#ba55d3
+	red            = "#bd2828", --#e5786d
+	yellow         = "#e6e600", --#b3b319 (old)
+
+	-- other defaults
 	bg_dark        = "#111111",
 	bg             = "#222222",
 	bg_highlight   = "#444444",
 	terminal_black = "#555555",
 
-	fg             = "#f7f3e1",
-	fg_dark        = "#e4a785",
-	fg_gutter      = "#b2b2b2",
-	comment        = "#d6d6d6",
+	fg             = "#e6e6e6", --#f7f3e1
+	fg_dark        = "#d1d1d1", --#e4a785
+	fg_gutter      = "#343434", --#b2b2b2
+	comment        = "#a6a6a6",
 
+	-- additional colors
 	dark3          = "#725752",
 	dark5          = "#8a6d3b",
-
-	cyan           = "#007acc",
-	blue           = "#a1c4f2",
 	blue0          = "#629dea",
-
 	blue1          = "#e08e5e",
 	blue2          = "#ffdcb2",
 	blue5          = "#ffcc99",
 	blue6          = "#bc986a",
 	blue7          = "#8e735b",
-
-	magenta        = "#ba55d3",
 	magenta2       = "#b87333",
-
-	red            = "#e5786d",
 	red1           = "#f5978e",
-
-	green          = "#cae682",
 	green1         = "#e2f0c2",
 	green2         = "#669966",
-
 	purple         = "#944dff",
 	orange         = "#ff9933",
-	yellow         = "#e6e600",
 	teal           = "#009999",
-
-	git            = {},
-	gitSigns       = {},
 }
 
-M.default.git.add = M.default.green1
-M.default.git.change = M.default.yellow
-M.default.git.delete = M.default.red1
-M.default.gitSigns.add = M.default.green1
-M.default.gitSigns.change = M.default.yellow
-M.default.gitSigns.delete = M.default.red1
+M.default.git = {
+	add = M.default.green,
+	change = M.default.yellow,
+	delete = M.default.red,
+}
+
+M.default.gitSigns = {
+	add = M.default.green,
+	change = M.default.yellow,
+	delete = M.default.red1,
+}
 
 ---@return ColorScheme
 function M.setup(opts)
