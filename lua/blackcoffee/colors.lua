@@ -32,11 +32,11 @@ M.default = {
 	magenta        = "#ba55d3",
 	magenta2       = "#b87333",
 
-	red            = "#cc6666",
+	red            = "#e5786d",
 	red1           = "#f5978e",
 
-	green          = "#e2f0c2",
-	green1         = "#c2d185",
+	green          = "#cae682",
+	green1         = "#e2f0c2",
 	green2         = "#669966",
 
 	purple         = "#944dff",
