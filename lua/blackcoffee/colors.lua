@@ -7,7 +7,7 @@ M.default = {
 	none           = "NONE",
 
 	bg_dark        = "#000000",
-	bg             = "#2d2d2d",
+	bg             = "#222222",
 	bg_highlight   = "#444444",
 	terminal_black = "#303030",
 
