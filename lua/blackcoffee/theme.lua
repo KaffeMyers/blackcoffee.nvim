@@ -30,7 +30,7 @@ function M.setup()
 
     Comment = { fg = c.comment, style = options.styles.comments }, -- any comment
     ColorColumn = { bg = c.black }, -- used for the columns set with 'colorcolumn'
-    Conceal = { fg = c.sienna }, -- placeholder characters substituted for concealed text (see 'conceallevel')
+    Conceal = { fg = c.terracotta }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor = { fg = c.bg, bg = c.fg }, -- character under the cursor
     lCursor = { fg = c.bg, bg = c.fg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM = { fg = c.bg, bg = c.fg }, -- like Cursor, but used when in IME mode |CursorIM|
@@ -53,7 +53,7 @@ function M.setup()
     SignColumnSB = { bg = c.bg_sidebar, fg = c.fg_gutter }, -- column where |signs| are displayed
     Substitute = { bg = c.red, fg = c.black }, -- |:substitute| replacement text highlighting
     LineNr = { fg = c.fg_gutter }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-    CursorLineNr = { fg = c.sienna }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    CursorLineNr = { fg = c.terracotta }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     MatchParen = { fg = c.orange, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg = { fg = c.fg_dark, bold = true }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea = { fg = c.fg_dark }, -- Area for messages and cmdline
@@ -144,7 +144,7 @@ function M.setup()
     Error = { fg = c.error }, -- (preferred) any erroneous construct
     Todo = { bg = c.yellow, fg = c.bg }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
-    qfLineNr = { fg = c.sienna },
+    qfLineNr = { fg = c.terracotta },
     qfFileName = { fg = c.blue },
 
     htmlH1 = { fg = c.magenta, bold = true },
@@ -219,7 +219,7 @@ function M.setup()
 
     --- Literals
     ["@string.documentation"] = { fg = c.yellow },
-    ["@string.regex"] = { fg = c.terracotta }, -- For regexes.
+    ["@string.regex"] = { fg = c.dune }, -- For regexes.
     ["@string.escape"] = { fg = c.magenta }, -- For escape characters within a string.
 
     --- Functions
@@ -466,7 +466,7 @@ function M.setup()
     WhichKeySeperator = { fg = c.comment },
     WhichKeySeparator = { fg = c.comment },
     WhichKeyFloat = { bg = c.bg_sidebar },
-    WhichKeyValue = { fg = c.sienna },
+    WhichKeyValue = { fg = c.terracotta },
 
     -- LspSaga
     DiagnosticWarning = { link = "DiagnosticWarn" },
@@ -528,18 +528,18 @@ function M.setup()
     BufferVisibleMod = { bg = c.bg_statusline, fg = c.warning },
     BufferVisibleSign = { bg = c.bg_statusline, fg = c.info },
     BufferVisibleTarget = { bg = c.bg_statusline, fg = c.red },
-    BufferInactive = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.sienna, 0.8) },
+    BufferInactive = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.terracotta, 0.8) },
     BufferInactiveERROR = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.error, 0.8) },
     BufferInactiveHINT = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.hint, 0.8) },
     -- BufferInactiveIcon = { bg = c.bg_statusline, fg = util.darken(c., 0.1) },
     BufferInactiveINFO = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.info, 0.8) },
     BufferInactiveWARN = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.warning, 0.8) },
-    BufferInactiveIndex = { bg = util.darken(c.bg_highlight, 0.4), fg = c.sienna },
+    BufferInactiveIndex = { bg = util.darken(c.bg_highlight, 0.4), fg = c.terracotta },
     BufferInactiveMod = { bg = util.darken(c.bg_highlight, 0.4), fg = util.darken(c.warning, 0.8) },
     BufferInactiveSign = { bg = util.darken(c.bg_highlight, 0.4), fg = c.bg },
     BufferInactiveTarget = { bg = util.darken(c.bg_highlight, 0.4), fg = c.red },
-    BufferOffset = { bg = c.bg_statusline, fg = c.sienna },
-    BufferTabpageFill = { bg = util.darken(c.bg_highlight, 0.8), fg = c.sienna },
+    BufferOffset = { bg = c.bg_statusline, fg = c.terracotta },
+    BufferTabpageFill = { bg = util.darken(c.bg_highlight, 0.8), fg = c.terracotta },
     BufferTabpages = { bg = c.bg_statusline, fg = c.none },
 
     -- Sneak
@@ -617,7 +617,7 @@ function M.setup()
     CmpItemKindTypeParameter = { fg = c.mint, bg = c.none },
     CmpItemKindEnumMember = { fg = c.mint, bg = c.none },
     CmpItemKindOperator = { fg = c.mint, bg = c.none },
-    CmpItemKindSnippet = { fg = c.sienna, bg = c.none },
+    CmpItemKindSnippet = { fg = c.terracotta, bg = c.none },
 
     -- navic
     NavicIconsFile = { fg = c.fg, bg = c.none },
@@ -747,7 +747,7 @@ function M.setup()
 
     MiniTablineCurrent = { fg = c.fg, bg = c.fg_gutter },
     MiniTablineFill = { bg = c.black },
-    MiniTablineHidden = { fg = c.sienna, bg = c.bg_statusline },
+    MiniTablineHidden = { fg = c.terracotta, bg = c.bg_statusline },
     MiniTablineModifiedCurrent = { fg = c.warning, bg = c.fg_gutter },
     MiniTablineModifiedHidden = { bg = c.bg_statusline, fg = util.darken(c.warning, 0.7) },
     MiniTablineModifiedVisible = { fg = c.warning, bg = c.bg_statusline },
@@ -789,7 +789,7 @@ function M.setup()
     NoiceCompletionItemKindTypeParameter = { fg = c.mint, bg = c.none },
     NoiceCompletionItemKindEnumMember = { fg = c.mint, bg = c.none },
     NoiceCompletionItemKindOperator = { fg = c.mint, bg = c.none },
-    NoiceCompletionItemKindSnippet = { fg = c.sienna, bg = c.none },
+    NoiceCompletionItemKindSnippet = { fg = c.terracotta, bg = c.none },
 
     TreesitterContext = { bg = util.darken(c.fg_gutter, 0.8) },
     Hlargs = { fg = c.yellow },

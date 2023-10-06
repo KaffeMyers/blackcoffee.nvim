@@ -815,7 +815,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${terracotta}</string>
+				<string>${dune}</string>
 			</dict>
 		</dict>
 		<dict>

@@ -8,11 +8,11 @@ M.default = {
 
 	-- Colors for representing original term colors
 	blue           = "#a1c4f2",
-	cyan           = "#22c3c3", --#007acc
-	green          = "#51b62f", --#cae682
+	cyan           = "#22c3c3",
+	green          = "#51b62f",
 	magenta        = "#ba55d3",
-	red            = "#bd2828", --#e5786d
-	yellow         = "#e6e600", --#b3b319 (old)
+	red            = "#bd2828",
+	yellow         = "#e6e600",
 
 	-- other defaults
 	bg_dark        = "#111111",
@@ -20,19 +20,19 @@ M.default = {
 	bg_highlight   = "#444444",
 	terminal_black = "#555555",
 
-	fg             = "#e6e6e6", --#f7f3e1
-	fg_dark        = "#d1d1d1", --#e4a785
-	fg_gutter      = "#343434", --#b2b2b2
+	fg             = "#e6e6e6",
+	fg_dark        = "#d1d1d1",
+	fg_gutter      = "#343434",
 	comment        = "#a6a6a6",
 
 	-- additional colors
 	slate          = "#725752",
-	sienna         = "#8a6d3b",
+	terracotta     = "#8a6d3b",
 	cornflower     = "#629dea",
 	salmon         = "#e08e5e",
 	apricot        = "#ffdcb2",
 	peach          = "#ffcc99",
-	terracotta     = "#bc986a",
+	dune           = "#bc986a",
 	mocha          = "#8e735b",
 	copper         = "#b87333",
 	coral          = "#f5978e",

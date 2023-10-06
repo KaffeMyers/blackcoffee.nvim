@@ -3,11 +3,11 @@ local c = require("blackcoffee.colors").setup({ transform = true })
 local M = {
   normal = { bg = c.none, fg = c.fg_dark },
 
-  ellipsis = { fg = c.sienna },
-  separator = { fg = c.sienna },
+  ellipsis = { fg = c.terracotta },
+  separator = { fg = c.terracotta },
   modified = { fg = c.warning },
 
-  dirname = { fg = c.sienna },
+  dirname = { fg = c.terracotta },
   basename = { fg = c.fg_dark, bold = true },
   context = { fg = c.fg_dark },
 
