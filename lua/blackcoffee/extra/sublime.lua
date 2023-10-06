@@ -230,7 +230,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${peach}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -318,7 +318,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue2}</string>
+				<string>${apricot}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -340,7 +340,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue2}</string>
+				<string>${apricot}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -384,7 +384,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${green1}</string>
+				<string>${mint}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -417,7 +417,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${green2}</string>
+				<string>${moss}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -518,7 +518,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue2}</string>
+				<string>${apricot}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -540,7 +540,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue2}</string>
+				<string>${apricot}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -595,7 +595,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue2}</string>
+				<string>${apricot}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -749,7 +749,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${peach}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -815,7 +815,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue6}</string>
+				<string>${terracotta}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -859,7 +859,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${peach}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -881,7 +881,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${peach}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -925,7 +925,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue2}</string>
+				<string>${apricot}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -969,7 +969,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue2}</string>
+				<string>${apricot}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -980,7 +980,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${green1}</string>
+				<string>${mint}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1092,7 +1092,7 @@ M.template = [[
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${peach}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1240,7 +1240,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${green1}</string>
+				<string>${mint}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1251,7 +1251,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue5}</string>
+				<string>${peach}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1286,7 +1286,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${blue2}</string>
+				<string>${apricot}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1308,7 +1308,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${red1}</string>
+				<string>${coral}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1341,7 +1341,7 @@ M.template = [[
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>${green1}</string>
+				<string>${mint}</string>
 			</dict>
 		</dict>
 		<dict>

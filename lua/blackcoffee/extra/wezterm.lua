@@ -28,7 +28,7 @@ bg_color = "${bg}"
 
 [colors.tab_bar.inactive_tab]
 bg_color = "${bg_dark}"
-fg_color = "${dark3}"
+fg_color = "${slate}"
 
 [colors.tab_bar.inactive_tab_hover]
 bg_color = "${bg_dark}"

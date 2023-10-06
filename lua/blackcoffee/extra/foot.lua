@@ -21,7 +21,7 @@ foreground=${fg}
 background=${bg}
 selection-foreground=${fg}
 selection-background=${bg_visual}
-urls=${green1}
+urls=${mint}
 
 regular0=${black}
 regular1=${red}
@@ -42,7 +42,7 @@ bright6=${cyan}
 bright7=${fg}
 
 16=${orange}
-17=${red1}]],
+17=${coral}]],
     footColors
   )
 

@@ -29,7 +29,7 @@ module.exports =  {
     {
       types: ["symbol"],
       style: {
-        color: "${blue1}",
+        color: "${salmon}",
       },
     },
     {
@@ -53,7 +53,7 @@ module.exports =  {
     {
       types: ["operator"],
       style: {
-        color: "${blue5}",
+        color: "${peach}",
       },
     },
     {

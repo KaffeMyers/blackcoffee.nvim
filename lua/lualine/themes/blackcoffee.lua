@@ -30,8 +30,8 @@ blackcoffee.replace = {
 }
 
 blackcoffee.terminal = {
-  a = {bg = colors.green1, fg = colors.black },
-  b = {bg = colors.fg_gutter, fg=colors.green1 },
+  a = {bg = colors.mint, fg = colors.black },
+  b = {bg = colors.fg_gutter, fg=colors.mint },
 }
 
 blackcoffee.inactive = {

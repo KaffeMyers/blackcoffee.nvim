@@ -44,7 +44,7 @@ colors:
 
   indexed_colors:
     - { index: 16, color: '${orange}' }
-    - { index: 17, color: '${red1}' }
+    - { index: 17, color: '${coral}' }
     
   ]],
     alacrittyColors

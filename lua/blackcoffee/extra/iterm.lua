@@ -330,13 +330,13 @@ function M.generate(colors)
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>${green1.b}</real>
+		<real>${mint.b}</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>${green1.g}</real>
+		<real>${mint.g}</real>
 		<key>Red Component</key>
-		<real>${green1.r}</real>
+		<real>${mint.r}</real>
 	</dict>
 	<key>Selected Text Color</key>
 	<dict>

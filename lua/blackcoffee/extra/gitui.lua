@@ -33,9 +33,9 @@ function M.generate(colors)
   disabled_fg: ${comment}
   diff_line_add: ${green}
   diff_line_delete: ${red}
-  diff_file_added: ${green1}
-  diff_file_removed: ${red1}
-  diff_file_moved: ${magenta2}
+  diff_file_added: ${mint}
+  diff_file_removed: ${coral}
+  diff_file_moved: ${copper}
   diff_file_modified: ${yellow}
   commit_hash: ${magenta}
   commit_time: ${teal}
@@ -43,7 +43,7 @@ function M.generate(colors)
   danger_fg: ${red}
   push_gauge_bg: ${bg}
   push_gauge_fg: ${fg}
-  tag_fg: ${magenta2}
+  tag_fg: ${copper}
   branch_fg: ${yellow}
 )
 ]],

@@ -23,16 +23,16 @@ blackcoffee.replace = {
 }
 
 blackcoffee.inactive = {
-  left = { { colors.blue, colors.bg_statusline }, { colors.dark3, colors.bg } },
+  left = { { colors.blue, colors.bg_statusline }, { colors.slate, colors.bg } },
   middle = { { colors.fg_gutter, colors.bg_statusline } },
-  right = { { colors.fg_gutter, colors.bg_statusline }, { colors.dark3, colors.bg } },
+  right = { { colors.fg_gutter, colors.bg_statusline }, { colors.slate, colors.bg } },
 }
 
 blackcoffee.tabline = {
-  left = { { colors.dark3, colors.bg_highlight }, { colors.dark3, colors.bg } },
+  left = { { colors.slate, colors.bg_highlight }, { colors.slate, colors.bg } },
   middle = { { colors.fg_gutter, colors.bg_statusline } },
-  right = { { colors.fg_gutter, colors.bg_statusline }, { colors.dark3, colors.bg } },
-  tabsel = { { colors.blue, colors.fg_gutter }, { colors.dark3, colors.bg } },
+  right = { { colors.fg_gutter, colors.bg_statusline }, { colors.slate, colors.bg } },
+  tabsel = { { colors.blue, colors.fg_gutter }, { colors.slate, colors.bg } },
 }
 
 return blackcoffee

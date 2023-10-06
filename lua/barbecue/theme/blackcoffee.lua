@@ -3,11 +3,11 @@ local c = require("blackcoffee.colors").setup({ transform = true })
 local M = {
   normal = { bg = c.none, fg = c.fg_dark },
 
-  ellipsis = { fg = c.dark5 },
-  separator = { fg = c.dark5 },
+  ellipsis = { fg = c.sienna },
+  separator = { fg = c.sienna },
   modified = { fg = c.warning },
 
-  dirname = { fg = c.dark5 },
+  dirname = { fg = c.sienna },
   basename = { fg = c.fg_dark, bold = true },
   context = { fg = c.fg_dark },
 
@@ -17,8 +17,8 @@ local M = {
   context_package = { fg = c.blue },
   context_class = { fg = c.orange },
   context_method = { fg = c.blue },
-  context_property = { fg = c.green1 },
-  context_field = { fg = c.green1 },
+  context_property = { fg = c.mint },
+  context_field = { fg = c.mint },
   context_constructor = { fg = c.blue },
   context_enum = { fg = c.orange },
   context_interface = { fg = c.orange },
@@ -31,12 +31,12 @@ local M = {
   context_array = { fg = c.orange },
   context_object = { fg = c.orange },
   context_key = { fg = c.purple },
-  context_null = { fg = c.blue1 },
-  context_enum_member = { fg = c.green1 },
+  context_null = { fg = c.salmon },
+  context_enum_member = { fg = c.mint },
   context_struct = { fg = c.orange },
   context_event = { fg = c.orange },
-  context_operator = { fg = c.green1 },
-  context_type_parameter = { fg = c.green1 },
+  context_operator = { fg = c.mint },
+  context_type_parameter = { fg = c.mint },
 }
 
 return M
