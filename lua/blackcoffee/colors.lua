@@ -10,7 +10,7 @@ M.default = {
 	blue           = "#a1c4f2",
 	cyan           = "#22c3c3", --#007acc
 	green          = "#51b62f", --#cae682
-	magenta        = "#b62f95", --#ba55d3
+	magenta        = "#ba55d3",
 	red            = "#bd2828", --#e5786d
 	yellow         = "#e6e600", --#b3b319 (old)
 
