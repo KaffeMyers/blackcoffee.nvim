@@ -29,7 +29,7 @@ module.exports =  {
     {
       types: ["symbol"],
       style: {
-        color: "${salmon}",
+        color: "${adobe}",
       },
     },
     {

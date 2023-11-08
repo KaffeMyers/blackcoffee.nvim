@@ -42,7 +42,7 @@ bright6=${cyan}
 bright7=${fg}
 
 16=${orange}
-17=${coral}]],
+17=${blush}]],
     footColors
   )
 

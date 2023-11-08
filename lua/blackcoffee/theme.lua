@@ -26,7 +26,7 @@ function M.setup()
   local c = theme.colors
 
   theme.highlights = {
-    Foo = { bg = c.copper, fg = c.fg },
+    Foo = { bg = c.leather, fg = c.fg },
 
     Comment = { fg = c.comment, style = options.styles.comments }, -- any comment
     ColorColumn = { bg = c.black }, -- used for the columns set with 'colorcolumn'
@@ -98,21 +98,21 @@ function M.setup()
     -- default,
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Constant = { fg = c.orange }, -- (preferred) any constant
-    String = { fg = c.green }, --   a string constant: "this is a string"
-    Character = { fg = c.green }, --  a character constant: 'c', '\n'
+    Constant = { fg = c.blush }, -- (preferred) any constant
+    String = { fg = c.peach }, --   a string constant: "this is a string"
+    Character = { fg = c.peach }, --  a character constant: 'c', '\n'
     -- Number        = { }, --   a number constant: 234, 0xff
     -- Boolean       = { }, --  a boolean constant: TRUE, false
     -- Float         = { }, --    a floating point constant: 2.3e10
 
-    Identifier = { fg = c.magenta, style = options.styles.variables }, -- (preferred) any variable name
-    Function = { fg = c.blue, style = options.styles.functions }, -- function name (also: methods for classes)
+    Identifier = { fg = c.leather, style = options.styles.variables }, -- (preferred) any variable name
+    Function = { fg = c.lightmoss, style = options.styles.functions }, -- function name (also: methods for classes)
 
-    Statement = { fg = c.magenta }, -- (preferred) any statement
+    Statement = { fg = c.dune }, -- (preferred) any statement
     -- Conditional   = { }, --  if, then, else, endif, switch, etc.
     -- Repeat        = { }, --   for, do, while, etc.
     -- Label         = { }, --    case, default, etc.
-    Operator = { fg = c.peach }, -- "sizeof", "+", "*", etc.
+    Operator = { fg = c.blue }, -- "sizeof", "+", "*", etc.
     Keyword = { fg = c.cyan, style = options.styles.keywords }, --  any other keyword
     -- Exception     = { }, --  try, catch, throw
 
@@ -122,12 +122,12 @@ function M.setup()
     -- Macro         = { }, --    same as Define
     -- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
 
-    Type = { fg = c.salmon }, -- (preferred) int, long, char, etc.
+    Type = { fg = c.adobe }, -- (preferred) int, long, char, etc.
     -- StorageClass  = { }, -- static, register, volatile, etc.
     -- Structure     = { }, --  struct, union, enum, etc.
     -- Typedef       = { }, --  A typedef
 
-    Special = { fg = c.salmon }, -- (preferred) any special symbol
+    Special = { fg = c.adobe }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     -- Tag           = { }, --    you can use CTRL-] on this
     -- Delimiter     = { }, --  character that needs attention
@@ -209,12 +209,12 @@ function M.setup()
     --- Misc
     -- TODO:
     -- ["@comment.documentation"] = { },
-    ["@operator"] = { fg = c.peach }, -- For any operator: `+`, but also `->` and `*` in C.
+    ["@operator"] = { fg = c.mint }, -- For any operator: `+`, but also `->` and `*` in C.
 
     --- Punctuation
-    ["@punctuation.delimiter"] = { fg = c.peach }, -- For delimiters ie: `.`
+    ["@punctuation.delimiter"] = { fg = c.green }, -- For delimiters ie: `.`
     ["@punctuation.bracket"] = { fg = c.fg_dark }, -- For brackets and parens.
-    ["@punctuation.special"] = { fg = c.peach }, -- For special punctutation that does not fall in the catagories before.
+    ["@punctuation.special"] = { fg = c.cornflower }, -- For special punctutation that does not fall in the catagories before.
     ["@punctuation.special.markdown"] = { fg = c.orange, bold = true },
 
     --- Literals
@@ -224,24 +224,24 @@ function M.setup()
 
     --- Functions
     ["@constructor"] = { fg = c.magenta }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-    ["@parameter"] = { fg = c.yellow }, -- For parameters of a function.
+    ["@parameter"] = { fg = c.fg }, -- For parameters of a function.
     ["@parameter.builtin"] = { fg = util.lighten(c.yellow, 0.8) }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
     --- Keywords
-    ["@keyword"] = { fg = c.purple, style = options.styles.keywords }, -- For keywords that don't fall in previous categories.
+    ["@keyword"] = { fg = c.mocha, style = options.styles.keywords }, -- For keywords that don't fall in previous categories.
     -- TODO:
     -- ["@keyword.coroutine"] = { }, -- For keywords related to coroutines.
-    ["@keyword.function"] = { fg = c.magenta, style = options.styles.functions }, -- For keywords used to define a fuction.
+    ["@keyword.function"] = { fg = c.leather, style = options.styles.functions }, -- For keywords used to define a fuction.
 
-    ["@label"] = { fg = c.blue }, -- For labels: `label:` in C and `:label:` in Lua.
+    ["@label"] = { fg = c.mint }, -- For labels: `label:` in C and `:label:` in Lua.
 
     --- Types
-    ["@type.builtin"] = { fg = util.darken(c.salmon, 0.8) },
+    ["@type.builtin"] = { fg = util.darken(c.adobe, 0.8) },
     ["@field"] = { fg = c.mint }, -- For fields.
     ["@property"] = { fg = c.mint },
 
     --- Identifiers
-    ["@variable"] = { fg = c.fg, style = options.styles.variables }, -- Any variable name that does not have another highlight.
+    ["@variable"] = { fg = c.blue, style = options.styles.variables }, -- Any variable name that does not have another highlight.
     ["@variable.builtin"] = { fg = c.red }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     --- Text
@@ -261,7 +261,7 @@ function M.setup()
 
     -- tsx
     ["@tag.tsx"] = { fg = c.red },
-    ["@constructor.tsx"] = { fg = c.salmon },
+    ["@constructor.tsx"] = { fg = c.adobe },
     ["@tag.delimiter.tsx"] = { fg = util.darken(c.blue, 0.7) },
 
     -- LSP Semantic Token Groups
@@ -275,7 +275,7 @@ function M.setup()
     ["@lsp.type.escapeSequence"] = { link = "@string.escape" },
     ["@lsp.type.formatSpecifier"] = { link = "@punctuation.special" },
     ["@lsp.type.generic"] = { link = "@variable" },
-    ["@lsp.type.interface"] = { fg = util.lighten(c.salmon, 0.7) },
+    ["@lsp.type.interface"] = { fg = util.lighten(c.adobe, 0.7) },
     ["@lsp.type.keyword"] = { link = "@keyword" },
     ["@lsp.type.lifetime"] = { link = "@storageclass" },
     ["@lsp.type.namespace"] = { link = "@namespace" },
@@ -300,8 +300,8 @@ function M.setup()
     ["@lsp.typemod.operator.injected"] = { link = "@operator" },
     ["@lsp.typemod.string.injected"] = { link = "@string" },
     ["@lsp.typemod.struct.defaultLibrary"] = { link = "@type.builtin" },
-    ["@lsp.typemod.type.defaultLibrary"] = { fg = util.darken(c.salmon, 0.8) },
-    ["@lsp.typemod.typeAlias.defaultLibrary"] = { fg = util.darken(c.salmon, 0.8) },
+    ["@lsp.typemod.type.defaultLibrary"] = { fg = util.darken(c.adobe, 0.8) },
+    ["@lsp.typemod.typeAlias.defaultLibrary"] = { fg = util.darken(c.adobe, 0.8) },
     ["@lsp.typemod.variable.callable"] = { link = "@function" },
     ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
     ["@lsp.typemod.variable.injected"] = { link = "@variable" },
@@ -315,7 +315,7 @@ function M.setup()
     ["@text.title.3.markdown"] = { fg = c.green, bold = true},
     ["@text.title.4.markdown"] = { fg = c.teal, bold = true},
     ["@text.title.5.markdown"] = { fg = c.magenta, bold = true},
-    ["@text.title.6.markdown"] = { fg = c.purple, bold = true},
+    ["@text.title.6.markdown"] = { fg = c.mocha, bold = true},
 
     -- ts-rainbow
     rainbowcol1 = { fg = c.red },
@@ -368,7 +368,7 @@ function M.setup()
 
     -- Neogit
     NeogitBranch = { fg = c.magenta },
-    NeogitRemote = { fg = c.purple },
+    NeogitRemote = { fg = c.mocha },
     NeogitHunkHeader = { bg = c.bg_highlight, fg = c.fg },
     NeogitHunkHeaderHighlight = { bg = c.fg_gutter, fg = c.blue },
     NeogitDiffContextHighlight = { bg = util.darken(c.fg_gutter, 0.5), fg = c.fg_dark },
@@ -381,14 +381,14 @@ function M.setup()
     NeotestFailed = { fg = c.red },
     NeotestSkipped = { fg = c.blue },
     NeotestTest = { fg = c.fg_sidebar },
-    NeotestNamespace = { fg = c.moss },
+    NeotestNamespace = { fg = c.darkmoss },
     NeotestFocused = { fg = c.yellow },
     NeotestFile = { fg = c.teal },
     NeotestDir = { fg = c.blue },
     NeotestBorder = { fg = c.blue },
     NeotestIndent = { fg = c.fg_sidebar },
     NeotestExpandMarker = { fg = c.fg_sidebar },
-    NeotestAdapterName = { fg = c.purple, bold = true },
+    NeotestAdapterName = { fg = c.mocha, bold = true },
     NeotestWinSelect = { fg = c.blue },
     NeotestMarked = { fg = c.blue },
     NeotestTarget = { fg = c.blue },
@@ -423,7 +423,7 @@ function M.setup()
     NvimTreeGitNew = { fg = c.git.add },
     NvimTreeGitDeleted = { fg = c.git.delete },
     NvimTreeOpenedFile = { bg = c.bg_highlight },
-    NvimTreeSpecialFile = { fg = c.purple, underline = true },
+    NvimTreeSpecialFile = { fg = c.mocha, underline = true },
     NvimTreeIndentMarker = { fg = c.fg_gutter },
     NvimTreeImageFile = { fg = c.fg_sidebar },
     NvimTreeSymlink = { fg = c.blue },
@@ -438,7 +438,7 @@ function M.setup()
     FernBranchText = { fg = c.blue },
 
     -- glyph palette
-    GlyphPalette1 = { fg = c.coral },
+    GlyphPalette1 = { fg = c.blush },
     GlyphPalette2 = { fg = c.green },
     GlyphPalette3 = { fg = c.yellow },
     GlyphPalette4 = { fg = c.blue },
@@ -456,7 +456,7 @@ function M.setup()
     AlphaShortcut = { fg = c.orange },
     AlphaHeader = { fg = c.blue },
     AlphaHeaderLabel = { fg = c.orange },
-    AlphaFooter = { fg = c.salmon },
+    AlphaFooter = { fg = c.adobe },
     AlphaButtons = { fg = c.cyan },
 
     -- WhichKey
@@ -480,11 +480,11 @@ function M.setup()
     LspSagaDefPreviewBorder = { fg = c.green },
     LspSagaCodeActionBorder = { fg = c.blue },
     LspSagaFinderSelection = { fg = c.bg_visual },
-    LspSagaCodeActionTitle = { fg = c.salmon },
-    LspSagaCodeActionContent = { fg = c.purple },
+    LspSagaCodeActionTitle = { fg = c.adobe },
+    LspSagaCodeActionContent = { fg = c.mocha },
     LspSagaSignatureHelpBorder = { fg = c.red },
-    ReferencesCount = { fg = c.purple },
-    DefinitionCount = { fg = c.purple },
+    ReferencesCount = { fg = c.mocha },
+    DefinitionCount = { fg = c.mocha },
     DefinitionIcon = { fg = c.blue },
     ReferencesIcon = { fg = c.blue },
     TargetWord = { fg = c.cyan },
@@ -547,35 +547,35 @@ function M.setup()
     SneakScope = { bg = c.bg_visual },
 
     -- Hop
-    HopNextKey = { fg = c.copper, bold = true },
-    HopNextKey1 = { fg = c.apricot, bold = true },
-    HopNextKey2 = { fg = util.darken(c.apricot, 0.6) },
+    HopNextKey = { fg = c.leather, bold = true },
+    HopNextKey1 = { fg = c.lightmoss, bold = true },
+    HopNextKey2 = { fg = util.darken(c.lightmoss, 0.6) },
     HopUnmatched = { fg = c.slate },
 
-    TSNodeKey = { fg = c.copper, bold = true },
+    TSNodeKey = { fg = c.leather, bold = true },
     TSNodeUnmatched = { fg = c.slate },
 
-    LeapMatch = { bg = c.copper, fg = c.fg, bold = true },
-    LeapLabelPrimary = { fg = c.copper, bold = true },
+    LeapMatch = { bg = c.leather, fg = c.fg, bold = true },
+    LeapLabelPrimary = { fg = c.leather, bold = true },
     LeapLabelSecondary = { fg = c.mint, bold = true },
     LeapBackdrop = { fg = c.slate },
 
     FlashBackdrop = { fg = c.slate },
-    FlashLabel = { bg = c.copper, bold = true, fg = c.fg },
+    FlashLabel = { bg = c.leather, bold = true, fg = c.fg },
 
     LightspeedGreyWash = { fg = c.slate },
     -- LightspeedCursor = { link = "Cursor" },
-    LightspeedLabel = { fg = c.copper, bold = true, underline = true },
+    LightspeedLabel = { fg = c.leather, bold = true, underline = true },
     LightspeedLabelDistant = { fg = c.mint, bold = true, underline = true },
-    LightspeedLabelDistantOverlapped = { fg = c.moss, underline = true },
-    LightspeedLabelOverlapped = { fg = c.copper, underline = true },
+    LightspeedLabelDistantOverlapped = { fg = c.darkmoss, underline = true },
+    LightspeedLabelOverlapped = { fg = c.leather, underline = true },
     LightspeedMaskedChar = { fg = c.orange },
-    LightspeedOneCharMatch = { bg = c.copper, fg = c.fg, bold = true },
-    LightspeedPendingOpArea = { bg = c.copper, fg = c.fg },
-    LightspeedShortcut = { bg = c.copper, fg = c.fg, bold = true, underline = true },
+    LightspeedOneCharMatch = { bg = c.leather, fg = c.fg, bold = true },
+    LightspeedPendingOpArea = { bg = c.leather, fg = c.fg },
+    LightspeedShortcut = { bg = c.leather, fg = c.fg, bold = true, underline = true },
     -- LightspeedShortcutOverlapped = { link = "LightspeedShortcut" },
     -- LightspeedUniqueChar = { link = "LightspeedUnlabeledMatch" },
-    LightspeedUnlabeledMatch = { fg = c.apricot, bold = true },
+    LightspeedUnlabeledMatch = { fg = c.lightmoss, bold = true },
 
     -- Cmp
     CmpDocumentation = { fg = c.fg, bg = c.bg_float },
@@ -584,8 +584,8 @@ function M.setup()
 
     CmpItemAbbr = { fg = c.fg, bg = c.none },
     CmpItemAbbrDeprecated = { fg = c.fg_gutter, bg = c.none, strikethrough = true },
-    CmpItemAbbrMatch = { fg = c.salmon, bg = c.none },
-    CmpItemAbbrMatchFuzzy = { fg = c.salmon, bg = c.none },
+    CmpItemAbbrMatch = { fg = c.adobe, bg = c.none },
+    CmpItemAbbrMatchFuzzy = { fg = c.adobe, bg = c.none },
 
     CmpItemMenu = { fg = c.comment, bg = c.none },
 
@@ -639,8 +639,8 @@ function M.setup()
     NavicIconsBoolean = { fg = c.orange, bg = c.none },
     NavicIconsArray = { fg = c.orange, bg = c.none },
     NavicIconsObject = { fg = c.orange, bg = c.none },
-    NavicIconsKey = { fg = c.purple, bg = c.none },
-    NavicIconsKeyword = { fg = c.purple, bg = c.none },
+    NavicIconsKey = { fg = c.mocha, bg = c.none },
+    NavicIconsKeyword = { fg = c.mocha, bg = c.none },
     NavicIconsNull = { fg = c.orange, bg = c.none },
     NavicIconsEnumMember = { fg = c.mint, bg = c.none },
     NavicIconsStruct = { fg = c.orange, bg = c.none },
@@ -651,7 +651,7 @@ function M.setup()
     NavicSeparator = { fg = c.fg, bg = c.none },
 
     IndentBlanklineChar = { fg = c.fg_gutter, nocombine = true },
-    IndentBlanklineContextChar = { fg = c.purple, nocombine = true },
+    IndentBlanklineContextChar = { fg = c.mocha, nocombine = true },
 
     -- Scrollbar
     ScrollbarHandle = { fg = c.none, bg = c.bg_highlight },
@@ -671,15 +671,15 @@ function M.setup()
     ScrollbarHintHandle = { fg = c.hint, bg = c.bg_highlight },
     ScrollbarHint = { fg = c.hint, bg = c.none },
 
-    ScrollbarMiscHandle = { fg = c.purple, bg = c.bg_highlight },
-    ScrollbarMisc = { fg = c.purple, bg = c.none },
+    ScrollbarMiscHandle = { fg = c.mocha, bg = c.bg_highlight },
+    ScrollbarMisc = { fg = c.mocha, bg = c.none },
 
     -- Yanky
     YankyPut = { link = "IncSearch" },
     YankyYanked = { link = "IncSearch" },
 
     -- Lazy
-    LazyProgressDone = { bold = true, fg = c.copper },
+    LazyProgressDone = { bold = true, fg = c.leather },
     LazyProgressTodo = { bold = true, fg = c.fg_gutter },
 
     -- Notify
@@ -689,19 +689,19 @@ function M.setup()
     NotifyWARNBorder = { fg = util.darken(c.warning, 0.3), bg = options.transparent and c.none or c.bg },
     NotifyINFOBorder = { fg = util.darken(c.info, 0.3), bg = options.transparent and c.none or c.bg },
     NotifyDEBUGBorder = { fg = util.darken(c.comment, 0.3), bg = options.transparent and c.none or c.bg },
-    NotifyTRACEBorder = { fg = util.darken(c.purple, 0.3), bg = options.transparent and c.none or c.bg },
+    NotifyTRACEBorder = { fg = util.darken(c.mocha, 0.3), bg = options.transparent and c.none or c.bg },
     --- Icons
     NotifyERRORIcon = { fg = c.error },
     NotifyWARNIcon = { fg = c.warning },
     NotifyINFOIcon = { fg = c.info },
     NotifyDEBUGIcon = { fg = c.comment },
-    NotifyTRACEIcon = { fg = c.purple },
+    NotifyTRACEIcon = { fg = c.mocha },
     --- Title
     NotifyERRORTitle = { fg = c.error },
     NotifyWARNTitle = { fg = c.warning },
     NotifyINFOTitle = { fg = c.info },
     NotifyDEBUGTitle = { fg = c.comment },
-    NotifyTRACETitle = { fg = c.purple },
+    NotifyTRACETitle = { fg = c.mocha },
     --- Body
     NotifyERRORBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
     NotifyWARNBody = { fg = c.fg, bg = options.transparent and c.none or c.bg },
@@ -715,12 +715,12 @@ function M.setup()
     MiniCursorword = { bg = c.fg_gutter },
     MiniCursorwordCurrent = { bg = c.fg_gutter },
 
-    MiniIndentscopeSymbol = { fg = c.salmon, nocombine = true },
+    MiniIndentscopeSymbol = { fg = c.adobe, nocombine = true },
     MiniIndentscopePrefix = { nocombine = true }, -- Make it invisible
 
-    MiniJump = { bg = c.copper, fg = "#ffffff" },
+    MiniJump = { bg = c.leather, fg = "#ffffff" },
 
-    MiniJump2dSpot = { fg = c.copper, bold = true, nocombine = true },
+    MiniJump2dSpot = { fg = c.leather, bold = true, nocombine = true },
 
     MiniStarterCurrent = { nocombine = true },
     MiniStarterFooter = { fg = c.yellow, italic = true },
@@ -729,7 +729,7 @@ function M.setup()
     MiniStarterItem = { fg = c.fg, bg = options.transparent and c.none or c.bg },
     MiniStarterItemBullet = { fg = c.border_highlight },
     MiniStarterItemPrefix = { fg = c.warning },
-    MiniStarterSection = { fg = c.salmon },
+    MiniStarterSection = { fg = c.adobe },
     MiniStarterQuery = { fg = c.info },
 
     MiniStatuslineDevinfo = { fg = c.fg_dark, bg = c.bg_highlight },

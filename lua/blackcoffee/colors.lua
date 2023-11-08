@@ -7,7 +7,7 @@ M.default = {
 	none           = "NONE",
 
 	-- Colors for representing original term colors
-	blue           = "#a1c4f2",
+	blue           = "#629dea",
 	cyan           = "#22c3c3",
 	green          = "#51b62f",
 	magenta        = "#ba55d3",
@@ -16,28 +16,28 @@ M.default = {
 
 	-- other defaults
 	bg_dark        = "#111111",
-	bg             = "#1a1a1a",
+	bg             = "#131313",
 	bg_highlight   = "#444444",
 	terminal_black = "#555555",
 
 	fg             = "#e6e6e6",
-	fg_dark        = "#d1d1d1",
+	fg_dark        = "#bababa",
 	fg_gutter      = "#343434",
 	comment        = "#a6a6a6",
 
 	-- additional colors
 	slate          = "#725752",
 	terracotta     = "#8a6d3b",
-	cornflower     = "#629dea",
-	salmon         = "#e08e5e",
-	apricot        = "#ffdcb2",
+	cornflower     = "#a1c4f2",
+	adobe          = "#e08e5e",
+	lightmoss      = "#A9CF82",
 	peach          = "#ffcc99",
 	dune           = "#bc986a",
 	mocha          = "#8e735b",
-	copper         = "#b87333",
-	coral          = "#f5978e",
+	leather        = "#b87333",
+	blush          = "#f5978e",
 	mint           = "#e2f0c2",
-	moss           = "#669966",
+	darkmoss       = "#669966",
 	purple         = "#944dff",
 	orange         = "#ff9933",
 	teal           = "#009999",
@@ -52,7 +52,7 @@ M.default.git = {
 M.default.gitSigns = {
 	add = M.default.green,
 	change = M.default.yellow,
-	delete = M.default.coral,
+	delete = M.default.blush,
 }
 
 ---@return ColorScheme
@@ -74,15 +74,15 @@ function M.setup(opts)
 	util.day_brightness = config.options.day_brightness
 
 	colors.diff = {
-		add = util.darken(colors.moss, 0.15),
-		delete = util.darken(colors.coral, 0.15),
+		add = util.darken(colors.darkmoss, 0.15),
+		delete = util.darken(colors.blush, 0.15),
 		change = util.darken(colors.mocha, 0.15),
 		text = colors.mocha,
 	}
 
 	colors.git.ignore = colors.slate
 	colors.black = util.darken(colors.bg, 0.8, "#000000")
-	colors.border_highlight = util.darken(colors.salmon, 0.8)
+	colors.border_highlight = util.darken(colors.adobe, 0.8)
 	colors.border = colors.black
 
 	-- Popups and statusline always get a dark background
@@ -104,14 +104,14 @@ function M.setup(opts)
 	-- colors.fg_float = config.options.styles.floats == "dark" and colors.fg_dark or colors.fg
 	colors.fg_float = colors.fg
 
-	colors.error = colors.coral
+	colors.error = colors.blush
 	colors.warning = colors.yellow
-	colors.info = colors.apricot
+	colors.info = colors.lightmoss
 	colors.hint = colors.teal
 
 	colors.delta = {
-		add = util.darken(colors.moss, 0.45),
-		delete = util.darken(colors.coral, 0.45),
+		add = util.darken(colors.darkmoss, 0.45),
+		delete = util.darken(colors.blush, 0.45),
 	}
 
 	config.options.on_colors(colors)
